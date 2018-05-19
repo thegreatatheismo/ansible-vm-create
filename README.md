@@ -33,7 +33,7 @@ An example of the values is provided in `defaults/main.yml`.
 Dependencies
 ------------
 
-A kickstart and an RHEL/CentOS/Fedora are required for this role. These can be local, or shared via a webserver. An example kickstart included in the files direcroty.
+A kickstart and an RHEL/CentOS/Fedora are required for this role. These can be local, or shared via a webserver. An example kickstart included in the templates direcroty.
 
 Example Playbook
 ----------------
