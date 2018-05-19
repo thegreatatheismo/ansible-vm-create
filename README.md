@@ -1,31 +1,38 @@
-Role Name
+VM-Create
 =========
 
-A brief description of the role goes here.
+Deploy Virtual Machines on KVM via a local kickstart.
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+For this role to work you will require installation media (an ISO mounted locally or shared via a web server), and a working kickstart.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+`vm_name`: Display name of the VM.
+`vm_ram`: How much memory the VM will have.
+`vm_cpu`: How many cores the VM will have.
+`vm_os`: The OS to be installed (same as installation media).
+`vm_disk_size`: Size of the virtual disk.
+`vm_bridge`: The network bridge the VM will use.
+`vm_media`: Path to the installation media.
+`vm_ks`: Path to the kickstart.
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+A kickstart and an RHEL/CentOS/Fedora are required for this role. These can be local, or shared via a webserver. An example kickstart included in the files direcroty.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+A basic playbook is all that's required:
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: vm-create }
 
 License
 -------
@@ -35,4 +42,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Just your average Linux Admin.
