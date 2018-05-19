@@ -12,13 +12,21 @@ Role Variables
 --------------
 
 `vm_name`: Display name of the VM.
+
 `vm_ram`: How much memory the VM will have.
+
 `vm_cpu`: How many cores the VM will have.
+
 `vm_os`: The OS to be installed (same as installation media).
+
 `vm_disk_size`: Size of the virtual disk.
+
 `vm_bridge`: The network bridge the VM will use.
+
 `vm_media`: Path to the installation media.
+
 `vm_ks`: Path to the kickstart.
+
 
 Dependencies
 ------------
