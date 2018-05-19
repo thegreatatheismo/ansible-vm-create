@@ -1,0 +1,6 @@
+---
+# tasks file for vm-create
+
+- name: Create virtual machine
+  command: virt-install --name="{{ vm_name }}" --memory="{{ vm_ram }}" --vcpus="{{ vm_cpu }}" --os-variant="{{ vm_os }}" --disk size="{{ vm_disk_size }}" --network bridge="{{ vm_bridge }}" --location="{{ vm_media }}" --extra-args="ks="{{ vm_ks }}" console=tty0 console=ttyS0" --nographics
+
