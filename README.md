@@ -11,6 +11,8 @@ For this role to work you will require installation media (an ISO mounted locall
 Role Variables
 --------------
 
+An example of the values is provided in `defaults/main.yml`.
+
 `vm_name`: Display name of the VM.
 
 `vm_ram`: How much memory the VM will have.
