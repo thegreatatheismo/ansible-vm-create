@@ -1,2 +1,12 @@
 ---
 # defaults file for vm-create
+
+vm_name: "test-vm"
+vm_ram: "2048"
+vm_cpu: "2"
+vm_os: "rhel7.4"
+vm_disk_size: "100"
+vm_bridge: "virbr1"
+vm_media: "http://example.com/pub/media/x86_64/rhel7.4"
+vm_ks: "http://example.com/pub/ks/test-kickstart.ks"
+
